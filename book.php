@@ -67,7 +67,7 @@ $mdebug=1;
 function db_connection()
 {
 	/*database connection */
-	$server="localhost";   	$username="root";  	$password="ForgEt123#";  $db="sbs_database";
+	$server="localhost";   	$username="root";  	$password="";  $db="";
 	$companydb = new wpdb($username,$password,$db,$server);
 	
 	if ($companydb==null)
