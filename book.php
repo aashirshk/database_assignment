@@ -78,9 +78,16 @@ function db_connection()
 	}
 }
 
+
 function insert_function($random_n, $mdebug)
 {
-	// code implementation
+	/*database connection */
+	// $server="localhost";   	$username="root";  	$password="ForgEt123#";  $db="sbs_database";
+	// $companydb = new wpdb($username,$password,$db,$server);
+	$companydb = db_connection();
+	$request=$_SERVER['REQUEST_METHOD'];
+	select_display($companydb,$mdebug);
+	
 }
 
 function update_book()
