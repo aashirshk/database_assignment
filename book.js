@@ -17,6 +17,5 @@ let editBook = (e) => {
 	
 	document.getElementById('insert').style.display = 'none';
 	document.getElementById('update').style.display = 'block';
-	//document.getElementById('book_form').setAttribute('method', 'put');
-	
+	document.getElementById('isbn_container').setAttribute('hidden', true);
 }
