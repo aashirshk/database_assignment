@@ -62,7 +62,7 @@ $mdebug=1;
 function db_connection()
 {
 	/*database connection */
-	$server="localhost";   	$username="root";  	$password="ForgEt123#";  $db="sbs_database";
+	$server="localhost";   	$username="root";  	$password="";  $db="";
 	$companydb = new wpdb($username,$password,$db,$server);
 	
 	if ($companydb==null)
@@ -76,8 +76,6 @@ function db_connection()
 function insert_function($random_n, $mdebug)
 {
 	/*database connection */
-	// $server="localhost";   	$username="root";  	$password="ForgEt123#";  $db="sbs_database";
-	// $companydb = new wpdb($username,$password,$db,$server);
 	$companydb = db_connection();
 	$form_random_n=$_POST["random_n"];
 	if ($form_random_n!=null && $form_random_n!=$random_n)
